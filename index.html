@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audrey Fisette — Courtier hypothécaire résidentiel</title>
+  <meta name="description" content="Pré-qualification, refinancement, renouvellement, travailleurs autonomes, prêteurs alternatifs et consolidation de dettes. Réservez un rendez-vous en ligne.">
+  <link rel="icon" href="assets/portrait.jpg">
+  <meta property="og:title" content="Audrey Fisette — Courtier hypothécaire résidentiel">
+  <meta property="og:description" content="Votre spécialiste hypothécaire à Montréal. Réservez un rendez-vous en ligne.">
+  <meta property="og:image" content="assets/portrait.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://assets.calendly.com">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script>
+    const CALENDLY_URL = "https://calendly.com/afisette/15minutes?month=2025-08";
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="hero">
+      <img src="assets/portrait.jpg" alt="Portrait d'Audrey Fisette" class="hero__photo" width="220" height="220" />
+      <div class="hero__text">
+        <h1>Audrey Fisette</h1>
+        <p class="subtitle">Courtier hypothécaire — Spécialiste résidentiel</p>
+        <div class="contact">
+          <a href="tel:+15146198223">📞 514&nbsp;619-8223</a>
+          <a href="mailto:afisette@planipret.com">✉️ afisette@planipret.com</a>
+          <span>📍 1188 avenue Union, suite 136, Montréal (QC) H3B&nbsp;0E5</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" id="btn-reserver">Réserver un rendez-vous</a>
+          <a class="btn btn-outline" href="#services">Voir les services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="topnav">
+  <div class="container">
+    <a href="#services">Services</a>
+    <a href="#prequal">Pré‑qualification</a>
+    <a href="#calendly">Rendez-vous</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Pré-qualification</h3>
+        <p>Estimez votre capacité d’emprunt et le paiement mensuel avant de magasiner. Analyse de crédit, revenus et mise de fonds.</p>
+      </article>
+      <article class="card">
+        <h3>Refinancement</h3>
+        <p>Optimisez votre taux, libérez de l’équité pour des projets ou regroupez vos dettes à coût moindre.</p>
+      </article>
+      <article class="card">
+        <h3>Renouvellement</h3>
+        <p>Comparez les offres avant l’échéance. Je négocie auprès de plusieurs prêteurs pour maximiser vos économies.</p>
+      </article>
+      <article class="card">
+        <h3>Travailleur autonome</h3>
+        <p>Solutions adaptées aux revenus variables (états financiers, déclarations, ajout d’amortissements, etc.).</p>
+      </article>
+      <article class="card">
+        <h3>Prêteurs alternatifs</h3>
+        <p>Options B et privés lorsque le dossier ne cadre pas avec les banques traditionnelles.</p>
+      </article>
+      <article class="card">
+        <h3>Consolidation de dettes</h3>
+        <p>Réduisez vos paiements mensuels en regroupant cartes, marges et prêts à un taux hypothécaire inférieur.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="prequal" class="section">
+  <div class="container">
+    <h2>Pré-qualification</h2>
+    <p>Partagez quelques informations et je vous recontacte rapidement pour valider votre capacité d’emprunt.</p>
+    <form id="prequal-form" class="form card" method="POST" action="https://formspree.io/f/XXXXXXXX">
+      <div class="form-row">
+        <div class="field">
+          <label for="prenom">Prénom *</label>
+          <input id="prenom" name="prenom" required>
+        </div>
+        <div class="field">
+          <label for="nom">Nom *</label>
+          <input id="nom" name="nom" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Courriel *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="tel">Téléphone *</label>
+          <input id="tel" name="tel" type="tel" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="ville">Ville</label>
+          <input id="ville" name="ville">
+        </div>
+        <div class="field">
+          <label for="typeprop">Type de propriété</label>
+          <select id="typeprop" name="typeprop">
+            <option>Unifamiliale</option>
+            <option>Condo</option>
+            <option>Plex (2-4)</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="mise">Mise de fonds estimée</label>
+          <input id="mise" name="mise" placeholder="p.ex. 20 000 $">
+        </div>
+        <div class="field">
+          <label for="revenu">Revenu annuel brut</label>
+          <input id="revenu" name="revenu" placeholder="p.ex. 85 000 $">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="statut">Statut d’emploi</label>
+          <select id="statut" name="statut">
+            <option>Employé(e)</option>
+            <option>Travailleur autonome</option>
+            <option>Contractuel(le)</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="objet">Objet</label>
+          <select id="objet" name="objet">
+            <option>Pré-qualification</option>
+            <option>Refinancement</option>
+            <option>Renouvellement</option>
+            <option>Prêteurs alternatifs</option>
+            <option>Consolidation de dettes</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Commentaires</label>
+        <textarea id="message" name="message" rows="5" placeholder="Expliquez brièvement votre situation."></textarea>
+      </div>
+      <div class="consent">
+        <label><input type="checkbox" id="consent" required> J’accepte d’être contacté(e) et que les informations ci‑dessus soient utilisées pour l’analyse préliminaire de mon dossier.</label>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Soumettre</button>
+        <p class="tiny">Vous pouvez aussi écrire à <a href="mailto:afisette@planipret.com">afisette@planipret.com</a> ou appeler au <a href="tel:+15146198223">514‑619‑8223</a>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="calendly" class="section section-alt">
+  <div class="container">
+    <h2>Prendre rendez-vous</h2>
+    <p>Choisissez l’heure qui vous convient dans mon agenda en ligne.</p>
+    <div class="calendly-inline-widget" data-url="" id="calendly-inline" style="min-width:320px;height:820px;"></div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container">
+    <h2>Questions fréquentes</h2>
+    <details>
+      <summary>Quels documents préparer pour une pré-qualification&nbsp;?</summary>
+      <p>Pièces d’identité, preuves de revenus (talons de paie, T4/Relevé 1, états financiers), confirmation de mise de fonds et relevés de dettes.</p>
+    </details>
+    <details>
+      <summary>Combien de temps dure une rencontre&nbsp;?</summary>
+      <p>Généralement 20 à 30 minutes pour un premier échange. Les dossiers plus complexes peuvent nécessiter un suivi.</p>
+    </details>
+    <details>
+      <summary>Est-ce que vos services sont payants&nbsp;?</summary>
+      <p>Mes services sont généralement rémunérés par le prêteur. Je vous indique à l’avance s’il y a des frais particuliers.</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-cards">
+      <a class="card contact-card" href="tel:+15146198223">
+        <h3>Téléphone</h3>
+        <p>514&nbsp;619-8223</p>
+      </a>
+      <a class="card contact-card" href="mailto:afisette@planipret.com">
+        <h3>Courriel</h3>
+        <p>afisette@planipret.com</p>
+      </a>
+      <div class="card contact-card">
+        <h3>Bureau</h3>
+        <p>1188 avenue Union, suite 136<br>Montréal (QC) H3B&nbsp;0E5</p>
+        <p><a class="btn btn-outline" target="_blank" rel="noopener" href="https://maps.google.com/?q=1188%20avenue%20Union%2C%20suite%20136%2C%20Montr%C3%A9al%20H3B%200E5">Itinéraire</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Audrey Fisette — Courtier hypothécaire résidentiel</p>
+    <p class="tiny">Planiprêt — Informations fournies à titre indicatif. Ce site ne remplace pas des conseils juridiques ou fiscaux.</p>
+  </div>
+</footer>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="script.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Audrey Fisette - Courtier hypothécaire",
+  "image": "assets/portrait.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1188 avenue Union, suite 136",
+    "addressLocality": "Montréal",
+    "addressRegion": "QC",
+    "postalCode": "H3B 0E5",
+    "addressCountry": "CA"
+  },
+  "telephone": "+1-514-619-8223",
+  "email": "afisette@planipret.com",
+  "areaServed": "Québec",
+  "url": "https://example.com"
+}
+</script>
+</body>
+</html>
